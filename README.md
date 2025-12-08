@@ -1,4 +1,10 @@
-# Nuxt Minimal Starter
+# Nuxt Exploration Repository
+
+This repository is a **testing and exploration playground** for experimenting with Nuxt, Nuxt modules, Nitro, and Azure Static Web Apps.
+
+> 📖 **For AI/LLM Context**: See [CONTEXT.md](./CONTEXT.md) for repository purpose and guidelines.
+
+**Deployed at**: https://zealous-pond-03bf06210.3.azurestaticapps.net/
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
