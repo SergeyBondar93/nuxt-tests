@@ -9,6 +9,7 @@
         <NuxtLink to="/prerender-fetching">Prerender Fetching</NuxtLink>
       <NuxtLink to="/ssr-fetching">SSR Fetching</NuxtLink>
       <NuxtLink to="/hybrid-rendering">Hybrid Rendering</NuxtLink>
+      <NuxtLink to="/server-components">Server Components</NuxtLink>
         <NuxtLink :to="`/users/${sampleUserId}`">Dynamic User</NuxtLink>
       </nav>
     </header>
