@@ -21,8 +21,8 @@ This document tracks potential areas to explore and test in this Nuxt + Nitro + 
 - [ ] Server-only composables
 
 ### Data Fetching
-- [ ] Server-side data fetching
-- [ ] Client-side data fetching
+- [x] Server-side data fetching
+- [x] Client-side data fetching
 - [ ] Hybrid rendering strategies
 - [ ] Data caching and revalidation
 - [ ] Error handling in data fetching

@@ -13,6 +13,9 @@
         <NuxtLink class="btn ghost" to="/components">
           Components & composables
         </NuxtLink>
+        <NuxtLink class="btn ghost" to="/data-fetching">
+          Data fetching examples
+        </NuxtLink>
         <button class="btn link" type="button" @click="goToDynamic">
           Programmatic navigation → user 7
         </button>
