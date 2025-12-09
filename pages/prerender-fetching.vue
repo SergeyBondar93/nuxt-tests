@@ -148,8 +148,7 @@ const {
   refresh: refreshServer,
   status: serverStatus,
 } = await useAsyncData<ServerClockResponse>('server-clock', () => $fetch('/api/server-clock'), {
-  server: true,
-  immediate: true
+  server: true
 })
 
 const serverGeneratedAt = computed(() => serverData.value?.generatedAt)
