@@ -7,7 +7,9 @@
     "dev": "nuxt dev --open",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "server": "node server/server.js",
+    "type-check": "nuxt typecheck"
   },
   "dependencies": {
     "cookie-parser": "^1.4.6",

@@ -79,3 +79,27 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Deploying to Azure Static Web Apps
+
+1. Generate the static site:
+   ```bash
+   npm run generate
+   ```
+   The static assets will be output to `.output/public`.
+2. In Azure Static Web Apps, set the **App artifact location** to `.output/public`.
+3. Build command: `npm run generate` (or `npx nuxt generate`).
+4. If you use the Azure SWA GitHub Action, a minimal workflow step looks like:
+   ```yaml
+   - name: Build
+     run: npm ci && npm run generate
+   - name: Deploy
+     uses: Azure/static-web-apps-deploy@v1
+     with:
+       app_location: .
+       output_location: .output/public
+   ```
+5. After deploy, navigate between the sample routes:
+   - `/routing` for link + programmatic navigation examples
+   - `/components` for auto-imported components & composables
+   - `/users/7` (any id) for dynamic params

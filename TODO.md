@@ -5,31 +5,24 @@ This document tracks potential areas to explore and test in this Nuxt + Nitro + 
 ## Nuxt Core Features
 
 ### Routing & Pages
-- [ ] File-based routing examples
-- [ ] Dynamic routes with parameters
-- [ ] Nested routes
-- [ ] Route middleware (global, named, inline)
-- [ ] Route validation
-- [ ] Catch-all routes (`[...slug].vue`)
-- [ ] Optional parameters (`[[slug]].vue`)
-- [ ] Programmatic navigation
+- [x] Programmatic navigation
 - [ ] Route transitions and animations
 
 ### Components & Composables
-- [ ] Auto-imported components
-- [ ] Custom composables
-- [ ] `useState` for reactive state management
+- [x] Auto-imported components
+- [x] Custom composables
+- [x] `useState` for reactive state management
 - [ ] `useFetch` and `useLazyFetch`
-- [ ] `useAsyncData` and `useLazyAsyncData`
+- [x] `useAsyncData` and `useLazyAsyncData`
 - [ ] `useCookie` for cookie management
-- [ ] `useRoute` and `useRouter`
+- [x] `useRoute` and `useRouter`
 - [ ] `useHead` for meta management
-- [ ] `useSeoMeta` for SEO
+- [x] `useSeoMeta` for SEO
 - [ ] Server-only composables
 
 ### Data Fetching
-- [ ] Server-side data fetching
-- [ ] Client-side data fetching
+- [x] Server-side data fetching
+- [x] Client-side data fetching
 - [ ] Hybrid rendering strategies
 - [ ] Data caching and revalidation
 - [ ] Error handling in data fetching
