@@ -24,7 +24,7 @@ const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
 await delay(3500)
 
 const { data: post } = await useFetch<Post>(
-  `https://jsonplaceholder.typicode.com/posts/${props.postId}`
+  `https://jsonplaceholder.typicode.com/posts/${Math.floor(Math.random() * 100) + 1}`
 )
 </script>
 

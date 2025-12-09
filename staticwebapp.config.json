@@ -1,20 +1,16 @@
 {
   "routes": [
     {
-      "route": "/components",
-      "rewrite": "/components/index.html"
+      "route": "/prerender-fetching",
+      "rewrite": "/prerender-fetching/index.html"
+    },
+    {
+      "route": "/index.html",
+      "redirect": "/"
     },
     {
       "route": "/",
-      "rewrite": "/index.html"
-    },
-    {
-      "route": "/routing",
-      "rewrite": "/routing/index.html"
-    },
-    {
-      "route": "/prerender-fetching",
-      "rewrite": "/prerender-fetching/index.html"
+      "rewrite": "/api/server"
     }
   ],
   "platform": {
