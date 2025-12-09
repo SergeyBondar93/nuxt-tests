@@ -25,6 +25,7 @@
           :key="id"
           name="ServerPostCard"
           :props="{ postId: id }"
+          lazy
         >
           <template #fallback>
             <div class="skeleton">
