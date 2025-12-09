@@ -1,12 +1,20 @@
 {
   "routes": [
     {
-      "route": "/index.html",
-      "redirect": "/"
+      "route": "/components",
+      "rewrite": "/components/index.html"
     },
     {
       "route": "/",
-      "rewrite": "/api/server"
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/routing",
+      "rewrite": "/routing/index.html"
+    },
+    {
+      "route": "/data-fetching",
+      "rewrite": "/data-fetching/index.html"
     }
   ],
   "platform": {

@@ -13,6 +13,6 @@ export const useAsyncGreeting = () => {
     return {
       message: `Fetched todo #${todo.id}: ${todo.title}`
     }
-  })
+  }, { 'immediate': false })
 }
 

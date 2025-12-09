@@ -147,7 +147,7 @@ const {
   data: serverData,
   pending: serverPending,
   refresh: refreshServer,
-  status: serverStatus
+  status: serverStatus,
 } = await useAsyncData<ServerClockResponse>('server-clock', () => $fetch('/api/server-clock'), {
   server: true
 })
