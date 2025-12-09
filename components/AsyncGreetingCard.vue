@@ -7,8 +7,8 @@
 
     <p>
       This example uses a custom composable that wraps <code>useLazyAsyncData</code>
-      to simulate fetching data after a short delay. It is safe for static
-      hosting because it does not require a server endpoint.
+      to add a short delay, then fetches a demo todo from
+      <code>jsonplaceholder.typicode.com</code>.
     </p>
 
     <div class="body">
@@ -21,8 +21,6 @@
 </template>
 
 <script setup lang="ts">
-import { useAsyncGreeting } from '../composables/useAsyncGreeting'
-
 const { data, pending: loading, execute } = useAsyncGreeting()
 </script>
 

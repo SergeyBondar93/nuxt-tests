@@ -117,8 +117,6 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
-import { useAsyncData, useFetch, useSeoMeta } from 'nuxt/app'
 
 type ServerClockResponse = {
   generatedAt: string

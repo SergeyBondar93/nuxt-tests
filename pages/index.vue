@@ -30,8 +30,6 @@
 </template>
 
 <script setup lang="ts">
-import { useRouter, useSeoMeta } from 'nuxt/app'
-
 useSeoMeta({
   title: 'Home'
 })

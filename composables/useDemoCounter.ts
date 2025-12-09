@@ -1,5 +1,3 @@
-import { useState } from 'nuxt/app'
-
 export const useDemoCounter = () => {
   const count = useState<number>('demo-counter', () => 0)
 

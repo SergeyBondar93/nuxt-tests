@@ -26,9 +26,6 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
-import { useRoute, useSeoMeta } from 'nuxt/app'
-
 const route = useRoute()
 const userId = computed(() => route.params.id)
 

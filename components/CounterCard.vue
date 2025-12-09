@@ -23,8 +23,6 @@
 </template>
 
 <script setup lang="ts">
-import { useDemoCounter } from '../composables/useDemoCounter'
-
 const { count, increment, decrement, reset } = useDemoCounter()
 </script>
 

@@ -6,6 +6,7 @@
         <NuxtLink to="/">Home</NuxtLink>
         <NuxtLink to="/routing">Routing</NuxtLink>
         <NuxtLink to="/components">Components</NuxtLink>
+        <NuxtLink to="/data-fetching">Data Fetching</NuxtLink>
         <NuxtLink :to="`/users/${sampleUserId}`">Dynamic User</NuxtLink>
       </nav>
     </header>
