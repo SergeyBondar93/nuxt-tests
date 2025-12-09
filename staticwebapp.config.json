@@ -13,8 +13,8 @@
       "rewrite": "/routing/index.html"
     },
     {
-      "route": "/data-fetching",
-      "rewrite": "/data-fetching/index.html"
+      "route": "/prerender-fetching",
+      "rewrite": "/prerender-fetching/index.html"
     }
   ],
   "platform": {

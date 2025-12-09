@@ -1,4 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+declare const process: {
+  env: Record<string, string | undefined>
+}
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
@@ -9,9 +13,10 @@ export default defineNuxtConfig({
   // Azure Static Web Apps configuration - only for production builds
   ...(process.env.NODE_ENV === 'production' && {
     routeRules: {
-      // Pre-render all routes for static hosting. Unknown dynamic params still
-      // render client-side in the browser.
-      '/**': { prerender: true }
+      // Пререндер только страницу prerender fetching
+      '/prerender-fetching': { prerender: true },
+      // Остальное отдаем через SSR
+      '/**': { prerender: false }
     }
   })
 })

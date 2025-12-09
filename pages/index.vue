@@ -13,8 +13,11 @@
         <NuxtLink class="btn ghost" to="/components">
           Components & composables
         </NuxtLink>
-        <NuxtLink class="btn ghost" to="/data-fetching">
-          Data fetching examples
+        <NuxtLink class="btn ghost" to="/prerender-fetching">
+          Prerender fetching
+        </NuxtLink>
+        <NuxtLink class="btn ghost" to="/ssr-fetching">
+          SSR fetching
         </NuxtLink>
         <button class="btn link" type="button" @click="goToDynamic">
           Programmatic navigation → user 7

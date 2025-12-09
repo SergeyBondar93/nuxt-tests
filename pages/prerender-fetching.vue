@@ -1,12 +1,11 @@
 <template>
   <div class="page">
     <header class="header">
-      <p class="eyebrow">Data fetching</p>
-      <h1>Server-side and client-side examples</h1>
+      <p class="eyebrow">Prerender fetching</p>
+      <h1>Static HTML + client/server requests</h1>
       <p class="lede">
-        Shows how to hydrate data during SSR with <code>useAsyncData</code> and how to
-        trigger client-only requests with <code>useFetch</code>. Both examples work when
-        deployed to Azure Static Web Apps.
+        Страница собирается как статика, но примеры ниже позволяют управлять тем,
+        что выполняется на сервере и что запускается только в браузере.
       </p>
     </header>
 
@@ -139,8 +138,8 @@ type TodosResponse = {
 }
 
 useSeoMeta({
-  title: 'Data fetching',
-  description: 'Server-side and client-side data fetching examples for Nuxt.'
+  title: 'Prerender fetching',
+  description: 'Prerendered page with controllable server/client fetch examples.'
 })
 
 const {
@@ -150,7 +149,7 @@ const {
   status: serverStatus,
 } = await useAsyncData<ServerClockResponse>('server-clock', () => $fetch('/api/server-clock'), {
   server: true,
-  immediate: false
+  immediate: true
 })
 
 const serverGeneratedAt = computed(() => serverData.value?.generatedAt)
