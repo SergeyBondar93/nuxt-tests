@@ -19,6 +19,10 @@ const props = withDefaults(defineProps<{ postId?: number }>(), {
   postId: 1
 })
 
+const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
+
+await delay(3500)
+
 const { data: post } = await useFetch<Post>(
   `https://jsonplaceholder.typicode.com/posts/${props.postId}`
 )
