@@ -19,6 +19,9 @@
         <NuxtLink class="btn ghost" to="/ssr-fetching">
           SSR fetching
         </NuxtLink>
+        <NuxtLink class="btn ghost" to="/hybrid-rendering">
+          Hybrid rendering
+        </NuxtLink>
         <button class="btn link" type="button" @click="goToDynamic">
           Programmatic navigation → user 7
         </button>
