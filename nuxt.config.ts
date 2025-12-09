@@ -10,13 +10,8 @@ export default defineNuxtConfig({
     // Azure preset only for production builds
     preset: process.env.NODE_ENV === 'production' ? 'azure' : undefined
   },
-  // Azure Static Web Apps configuration - only for production builds
-  ...(process.env.NODE_ENV === 'production' && {
-    routeRules: {
-      // Пререндер только страницу prerender fetching
-      '/prerender-fetching': { prerender: true },
-      // Остальное отдаем через SSR
-      '/**': { prerender: false }
-    }
-  })
+  routeRules: {
+    // Пререндерим эту страницу на этапе сборки, остальное оставляем под SSR
+    '/prerender-fetching': { prerender: true }
+  }
 })

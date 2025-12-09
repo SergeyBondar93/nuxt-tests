@@ -142,6 +142,10 @@ useSeoMeta({
   description: 'Prerendered page with controllable server/client fetch examples.'
 })
 
+definePageMeta({
+  prerender: true
+})
+
 const {
   data: serverData,
   pending: serverPending,

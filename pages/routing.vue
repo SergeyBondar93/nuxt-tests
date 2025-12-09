@@ -14,6 +14,7 @@
       <ul>
         <li><NuxtLink to="/">Home (static route)</NuxtLink></li>
         <li><NuxtLink to="/components">Components & composables</NuxtLink></li>
+        <li><NuxtLink to="/server-components">Server-only components</NuxtLink></li>
         <li>
           <NuxtLink :to="{ name: 'users-id', params: { id: '99' }, query: { from: 'routing-page' } }">
             Dynamic route with params and query

@@ -22,6 +22,9 @@
         <NuxtLink class="btn ghost" to="/hybrid-rendering">
           Hybrid rendering
         </NuxtLink>
+        <NuxtLink class="btn ghost" to="/server-components">
+          Server-only components
+        </NuxtLink>
         <button class="btn link" type="button" @click="goToDynamic">
           Programmatic navigation → user 7
         </button>
